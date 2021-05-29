@@ -1,13 +1,69 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background-color: blueviolet;
+  padding: 0 100px;
+  height: 50px;
+  line-height: 50px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+nav ul li:hover {
+  background-color: #000;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+nav ul li button {
+  outline: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.center-item {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.center-item button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+.todo-item {
+  margin: 10px 0px;
+  text-transform: capitalize;
 }
